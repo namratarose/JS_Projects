@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Background Changer</title>
+    <style>
+        html,body{
+            margin:0;
+            padding:0;
+            background-color: #212121;
+            color:white;
+            height:100%;
+            width:100%;
+        }
+        .btn{
+            height: 100px;
+            width: 100px;
+            border-radius: 10px;
+        }
+        #red{
+            background-color: rgb(240, 76, 76);
+        }
+        #yellow{
+            background-color: rgb(238, 238, 50);
+        }
+        #purple{
+            background-color: rgb(210, 90, 210);
+        }
+        #orange{
+            background-color: rgb(247, 187, 74);
+        }
+        .container{
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            height:100%;
+            width:100%;
+            flex-direction: column;
+        }
+        .heading{
+            font-size: 1.8rem;
+        }
+        .text{
+            font-size: 1.7rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="heading">
+            <h1>Welcome to background changer</h1>
+        </div>
+        <div class="text">
+            <p>Click any button to change backgound</p>
+        </div>
+        <div class="btn-container">
+            <span><button id="red" class="btn"></button></span>
+            <span><button id="yellow" class="btn"></button></span>
+            <span><button id="purple" class="btn"></button></span>
+            <span><button id="orange" class="btn"></button></span>
+        </div>
+    </div>
+    <script src="bgchanger.js"></script>
+</body>
+</html>
